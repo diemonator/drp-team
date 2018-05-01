@@ -40,9 +40,10 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.timer = new System.Windows.Forms.Timer(this.components);
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar)).BeginInit();
             this.groupBox1.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // rb_FCFS
@@ -104,7 +105,7 @@
             // 
             // tb_nrToBeEated
             // 
-            this.tb_nrToBeEated.Location = new System.Drawing.Point(167, 12);
+            this.tb_nrToBeEated.Location = new System.Drawing.Point(134, 18);
             this.tb_nrToBeEated.Name = "tb_nrToBeEated";
             this.tb_nrToBeEated.Size = new System.Drawing.Size(47, 20);
             this.tb_nrToBeEated.TabIndex = 5;
@@ -112,14 +113,14 @@
             // lb_numbers
             // 
             this.lb_numbers.FormattingEnabled = true;
-            this.lb_numbers.Location = new System.Drawing.Point(167, 39);
+            this.lb_numbers.Location = new System.Drawing.Point(134, 44);
             this.lb_numbers.Name = "lb_numbers";
             this.lb_numbers.Size = new System.Drawing.Size(47, 212);
             this.lb_numbers.TabIndex = 6;
             // 
             // trackBar
             // 
-            this.trackBar.Location = new System.Drawing.Point(54, 12);
+            this.trackBar.Location = new System.Drawing.Point(12, 3);
             this.trackBar.Maximum = 100;
             this.trackBar.Name = "trackBar";
             this.trackBar.Orientation = System.Windows.Forms.Orientation.Vertical;
@@ -127,7 +128,7 @@
             this.trackBar.Size = new System.Drawing.Size(45, 319);
             this.trackBar.TabIndex = 7;
             this.trackBar.TickStyle = System.Windows.Forms.TickStyle.Both;
-            this.trackBar.Scroll += new System.EventHandler(this.TrackBar_Scroll);
+            this.trackBar.ValueChanged += new System.EventHandler(this.TrackBar_ValueChanged);
             // 
             // groupBox1
             // 
@@ -145,44 +146,44 @@
             // 
             // timer
             // 
-            this.timer.Interval = 1000;
+            this.timer.Interval = 80;
             this.timer.Tick += new System.EventHandler(this.Timer_Tick);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(243, 207);
+            this.label1.Location = new System.Drawing.Point(131, 259);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(35, 13);
             this.label1.TabIndex = 9;
             this.label1.Text = "label1";
             // 
-            // label2
+            // panel1
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(327, 207);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(0, 13);
-            this.label2.TabIndex = 10;
+            this.panel1.Controls.Add(this.trackBar);
+            this.panel1.Controls.Add(this.tb_nrToBeEated);
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.lb_numbers);
+            this.panel1.Location = new System.Drawing.Point(12, 12);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(200, 329);
+            this.panel1.TabIndex = 11;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(412, 353);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.trackBar);
-            this.Controls.Add(this.lb_numbers);
-            this.Controls.Add(this.tb_nrToBeEated);
             this.Name = "Form1";
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.trackBar)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -199,7 +200,7 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Timer timer;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Panel panel1;
     }
 }
 

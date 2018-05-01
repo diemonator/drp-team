@@ -12,79 +12,85 @@ namespace DP_Week1
 {
     public partial class Form1 : Form
     {
-        private List<int> listOfNumbers;
-        private IAlgorithm algorithm;
-        Random randomNumber;
+        DiskScheduler scheduler;
+        private int number;
         public Form1()
         {
             InitializeComponent();
-            listOfNumbers = new List<int>();
-            randomNumber = new Random();
-            GenerateNumbers();
+            scheduler = new DiskScheduler();
+            SetButtonsStatus();
             UpdateListBox();
         }
 
-        private void GenerateNumbers()
+        private void BtnStart_Click(object sender, EventArgs e)
         {
-            for (int i = 0; i < 10; i++)
+            timer.Start();
+            UpdateOnRunTime();
+            ((Button)sender).Enabled = false;
+            BtnStop.Enabled = true;
+        }
+
+        private void BtnStop_Click(object sender, EventArgs e)
+        {
+            timer.Stop();
+            SetButtonsStatus();
+        }
+
+        private void Rb_FCFS_Click(object sender, EventArgs e)
+        {
+            ScanType type;
+            if (rb_FCFS.Checked)
+                type = ScanType.FCFS;
+            else if (rb_SSTF.Checked)
+                type = ScanType.SSTF;
+            else
+                type = ScanType.ELEVATOR;
+            scheduler.AlgorithumChanged(type);
+        }
+
+        private void Timer_Tick(object sender, EventArgs e)
+        {
+            if (number > trackBar.Value)
             {
-                listOfNumbers.Add(randomNumber.Next(0, 100));
+                trackBar.Value++;
+            }
+            else if (number < trackBar.Value)
+            {
+                trackBar.Value--;
+            }
+            else
+            {
+                scheduler.NumberConsumed(number);
+                UpdateOnRunTime();
             }
         }
 
         private void UpdateListBox()
         {
             lb_numbers.Items.Clear();
-            foreach (int i in listOfNumbers)
+            foreach (int i in scheduler.GetList())
             {
                 lb_numbers.Items.Add(i);
             }
         }
 
-        private void BtnStart_Click(object sender, EventArgs e)
+        private void UpdateOnRunTime()
         {
-            timer.Start();
-        }
-
-        private void Rb_FCFS_Click(object sender, EventArgs e)
-        {
-            RadioButtonChecker();
-        }
-
-        private void BtnStop_Click(object sender, EventArgs e)
-        {
-            timer.Stop();
-        }
-
-        private void RadioButtonChecker()
-        {
-            if (rb_FCFS.Checked)
-            {
-                algorithm = new FCFS();
-                tb_nrToBeEated.Text = listOfNumbers[0].ToString();
-                listOfNumbers = algorithm.StartAlgorithm(listOfNumbers);
-            }
-            else if (rb_SSTF.Checked)
-            {
-                algorithm = new SSTF();
-            }
-            else
-            {
-                algorithm = new Elevator();
-                tb_nrToBeEated.Text = listOfNumbers[0].ToString();
-                listOfNumbers = algorithm.StartAlgorithm(listOfNumbers);
-            }
-        }
-
-        private void Timer_Tick(object sender, EventArgs e)
-        {
-            RadioButtonChecker();
+            number = scheduler.StartAlgorithum();
+            tb_nrToBeEated.Text = number.ToString();
             UpdateListBox();
+            lb_numbers.Items.Remove(number);
         }
 
-        private void TrackBar_Scroll(object sender, EventArgs e)
+        private void TrackBar_ValueChanged(object sender, EventArgs e)
         {
             label1.Text = trackBar.Value.ToString();
+        }
+
+        private void SetButtonsStatus()
+        {
+            BtnStop.Enabled = false;
+            BtnStart.Enabled = true;
         }
     }
 }

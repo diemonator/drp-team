@@ -8,6 +8,6 @@ namespace DP_Week1
 {
     interface IAlgorithm
     {
-        List<int> StartAlgorithm(List<int>numbers);
+        int NextNumber(List<int>numbers);
     }
 }

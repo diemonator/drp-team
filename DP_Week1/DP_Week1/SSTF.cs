@@ -8,10 +8,12 @@ namespace DP_Week1
 {
     class SSTF : IAlgorithm
     {
-        public List<int> StartAlgorithm(List<int> numbers)
+        private int last = -1;
+        public int NextNumber(List<int> numbers)
         {
-
-            return numbers;
+            int nearest = numbers.OrderBy(x => Math.Abs((long)x - last)).First();
+            last = nearest;
+            return nearest;
         }
     }
 }
