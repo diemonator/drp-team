@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="DP_Week1.DiskScheduler">
+    <Position X="0.5" Y="0.5" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>BAAAAQAAAAAAACAAAAAAIAAACAEAAAAAAAQAAAAgAAI=</HashCode>
+      <FileName>DiskScheduler.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DP_Week1.Elevator" BaseTypeListCollapsed="true">
+    <Position X="3.75" Y="4.5" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAABAgA=</HashCode>
+      <FileName>Elevator.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="DP_Week1.FCFS" BaseTypeListCollapsed="true">
+    <Position X="4" Y="2" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>FCFS.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="DP_Week1.DiskSimulatorForm">
+    <Position X="11.25" Y="0.5" Width="3.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAIQgCAAQBBACECAIAACAAwgAABAACQAYwAEAEA=</HashCode>
+      <FileName>DiskSimulatorForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DP_Week1.SSTF" BaseTypeListCollapsed="true">
+    <Position X="7.25" Y="0.5" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgA=</HashCode>
+      <FileName>SSTF.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Interface Name="DP_Week1.IAlgorithm">
+    <Position X="7.75" Y="4.75" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IAlgorithm.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="DP_Week1.ScanType">
+    <Position X="0.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAEA=</HashCode>
+      <FileName>ScanType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

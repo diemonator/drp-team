@@ -10,11 +10,11 @@ using System.Windows.Forms;
 
 namespace DP_Week1
 {
-    public partial class Form1 : Form
+    public partial class DiskSimulatorForm : Form
     {
         DiskScheduler scheduler;
         private int number;
-        public Form1()
+        public DiskSimulatorForm()
         {
             InitializeComponent();
             scheduler = new DiskScheduler();

@@ -1,6 +1,6 @@
 ﻿namespace DP_Week1
 {
-    partial class Form1
+    partial class DiskSimulatorForm
     {
         /// <summary>
         /// Required designer variable.

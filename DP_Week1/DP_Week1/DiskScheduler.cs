@@ -10,9 +10,11 @@ namespace DP_Week1
     {
         private const int NUMBER_OF_NUMBERS_GENERATED = 10;
 
-        private IAlgorithm algorithm;
+
         private List<int> numbers;
         private Random random;
+        private IAlgorithm algorithm;
+
         public DiskScheduler()
         {
             numbers = new List<int>();

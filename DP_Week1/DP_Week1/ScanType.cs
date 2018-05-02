@@ -8,6 +8,6 @@ namespace DP_Week1
 {
     enum ScanType
     {
-        FCFS,SSTF,ELEVATOR
+        FCFS, SSTF, ELEVATOR
     }
 }
