@@ -41,6 +41,9 @@
             this.timer = new System.Windows.Forms.Timer(this.components);
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.lbl_destination = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -115,7 +118,7 @@
             this.lb_numbers.FormattingEnabled = true;
             this.lb_numbers.Location = new System.Drawing.Point(134, 44);
             this.lb_numbers.Name = "lb_numbers";
-            this.lb_numbers.Size = new System.Drawing.Size(47, 212);
+            this.lb_numbers.Size = new System.Drawing.Size(47, 264);
             this.lb_numbers.TabIndex = 6;
             // 
             // trackBar
@@ -152,31 +155,63 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(131, 259);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(330, 181);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
+            this.label1.Size = new System.Drawing.Size(0, 16);
             this.label1.TabIndex = 9;
-            this.label1.Text = "label1";
             // 
             // panel1
             // 
             this.panel1.Controls.Add(this.trackBar);
             this.panel1.Controls.Add(this.tb_nrToBeEated);
-            this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.lb_numbers);
             this.panel1.Location = new System.Drawing.Point(12, 12);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(200, 329);
             this.panel1.TabIndex = 11;
             // 
-            // Form1
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(223, 181);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(101, 16);
+            this.label2.TabIndex = 10;
+            this.label2.Text = "Current Position";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(223, 204);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(75, 16);
+            this.label3.TabIndex = 11;
+            this.label3.Text = "Destination";
+            // 
+            // lbl_destination
+            // 
+            this.lbl_destination.AutoSize = true;
+            this.lbl_destination.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_destination.Location = new System.Drawing.Point(330, 204);
+            this.lbl_destination.Name = "lbl_destination";
+            this.lbl_destination.Size = new System.Drawing.Size(0, 16);
+            this.lbl_destination.TabIndex = 12;
+            // 
+            // DiskSimulatorForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(412, 353);
+            this.Controls.Add(this.lbl_destination);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.groupBox1);
-            this.Name = "Form1";
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Name = "DiskSimulatorForm";
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.trackBar)).EndInit();
             this.groupBox1.ResumeLayout(false);
@@ -184,6 +219,7 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -201,6 +237,9 @@
         private System.Windows.Forms.Timer timer;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label lbl_destination;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
     }
 }
 

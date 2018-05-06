@@ -19,7 +19,7 @@ namespace DP_Week1
         {
             numbers = new List<int>();
             random = new Random();
-            algorithm = new FCFS();
+            //algorithm = new FCFS();
             GenerateNumbers();
         }
 
@@ -37,19 +37,19 @@ namespace DP_Week1
             numbers.Add(random.Next(0, 100));
         }
 
-        public void AlgorithumChanged(ScanType type)
+        public void AlgorithumChanged(IAlgorithm type)
         {
-            switch (type)
+            if (type is FCFS)
             {
-                case ScanType.FCFS:
-                    algorithm = new FCFS();
-                    break;
-                case ScanType.SSTF:
-                    algorithm = new SSTF();
-                    break;
-                case ScanType.ELEVATOR:
-                    algorithm = new Elevator();
-                    break;
+                algorithm = new FCFS();
+            }
+            else if (type is SSTF)
+            {
+                algorithm = new SSTF();
+            }
+            else if (type is Elevator)
+            {
+                algorithm = new Elevator();
             }
         }
 

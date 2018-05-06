@@ -38,14 +38,12 @@ namespace DP_Week1
 
         private void Rb_FCFS_Click(object sender, EventArgs e)
         {
-            ScanType type;
             if (rb_FCFS.Checked)
-                type = ScanType.FCFS;
+                scheduler.AlgorithumChanged(new FCFS());
             else if (rb_SSTF.Checked)
-                type = ScanType.SSTF;
+                scheduler.AlgorithumChanged(new SSTF());
             else
-                type = ScanType.ELEVATOR;
-            scheduler.AlgorithumChanged(type);
+                scheduler.AlgorithumChanged(new Elevator());
         }
 
         private void Timer_Tick(object sender, EventArgs e)
@@ -78,6 +76,7 @@ namespace DP_Week1
         {
             number = scheduler.StartAlgorithum();
             tb_nrToBeEated.Text = number.ToString();
+            lbl_destination.Text = number.ToString();
             UpdateListBox();
             lb_numbers.Items.Remove(number);
         }
