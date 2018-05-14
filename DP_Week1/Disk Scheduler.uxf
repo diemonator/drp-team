@@ -55,15 +55,15 @@ fontsize=16
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>50</x>
+      <x>10</x>
       <y>500</y>
-      <w>280</w>
+      <w>370</w>
       <h>70</h>
     </coordinates>
     <panel_attributes>&lt;&lt;Interface&gt;&gt;
 Algorithm
 --
-+ NextNumber(List&lt;int&gt; numbers): int</panel_attributes>
++ NextNumber(List&lt;int&gt; numbers, int position): int</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -96,7 +96,7 @@ Algorithm
 - random: Random
 --
 + DiskScheduler(): ctor
-+ AlgorithmChanged(ScanType type): void
++ AlgorithmChanged(IAlgorithm type): void
 - GenrateNumbers(): void
 + GetList(): List&lt;int&gt;
 + NumberConsumed(int number): void
@@ -158,13 +158,13 @@ Algorithm
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>320</x>
+      <x>370</x>
       <y>530</y>
-      <w>230</w>
+      <w>180</w>
       <h>30</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;.</panel_attributes>
-    <additional_attributes>10.0;10.0;210.0;10.0</additional_attributes>
+    <additional_attributes>10.0;10.0;160.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
