@@ -4,9 +4,9 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>260</x>
-      <y>10</y>
-      <w>740</w>
+      <x>0</x>
+      <y>140</y>
+      <w>940</w>
       <h>40</h>
     </coordinates>
     <panel_attributes>lw=2
@@ -16,8 +16,8 @@ Decorator PATTERN</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>450</x>
-      <y>80</y>
+      <x>390</x>
+      <y>200</y>
       <w>210</w>
       <h>80</h>
     </coordinates>
@@ -31,14 +31,14 @@ IVehicle
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>310</x>
-      <y>230</y>
+      <x>250</x>
+      <y>350</y>
       <w>210</w>
       <h>110</h>
     </coordinates>
     <panel_attributes>Car
 --
-- _type: string
+- _typeBRand: string
 --
 + GetPrice(): double
 + GetDescription(): string</panel_attributes>
@@ -47,9 +47,9 @@ IVehicle
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>600</x>
-      <y>230</y>
-      <w>280</w>
+      <x>540</x>
+      <y>350</y>
+      <w>290</w>
       <h>130</h>
     </coordinates>
     <panel_attributes>&lt;&lt;abstract&gt;&gt;
@@ -65,23 +65,25 @@ VehicleComponent
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>390</x>
-      <y>150</y>
-      <w>180</w>
+      <x>340</x>
+      <y>270</y>
+      <w>170</w>
       <h>100</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;.</panel_attributes>
-    <additional_attributes>160.0;10.0;160.0;40.0;10.0;40.0;10.0;80.0</additional_attributes>
+    <additional_attributes>150.0;10.0;150.0;40.0;10.0;40.0;10.0;80.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>70</x>
-      <y>230</y>
+      <x>10</x>
+      <y>350</y>
       <w>210</w>
       <h>110</h>
     </coordinates>
     <panel_attributes>Truck
+--
+- _typeBrand: string
 --
 + GetPrice(): double
 + GetDescription(): string</panel_attributes>
@@ -90,8 +92,8 @@ VehicleComponent
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>160</x>
-      <y>180</y>
+      <x>100</x>
+      <y>300</y>
       <w>260</w>
       <h>70</h>
     </coordinates>
@@ -101,23 +103,23 @@ VehicleComponent
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>530</x>
-      <y>180</y>
-      <w>190</w>
+      <x>470</x>
+      <y>300</y>
+      <w>240</w>
       <h>70</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
-    <additional_attributes>10.0;10.0;170.0;10.0;170.0;50.0</additional_attributes>
+    <additional_attributes>10.0;10.0;220.0;10.0;220.0;50.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>800</x>
-      <y>470</y>
+      <x>740</x>
+      <y>590</y>
       <w>210</w>
-      <h>140</h>
+      <h>90</h>
     </coordinates>
-    <panel_attributes>AirConditioner
+    <panel_attributes>ManualGearing
 --
 
 --
@@ -128,10 +130,10 @@ VehicleComponent
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>450</x>
-      <y>470</y>
+      <x>390</x>
+      <y>590</y>
       <w>210</w>
-      <h>140</h>
+      <h>90</h>
     </coordinates>
     <panel_attributes>AutomaticGearing
 --
@@ -144,8 +146,8 @@ VehicleComponent
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>720</x>
-      <y>350</y>
+      <x>660</x>
+      <y>470</y>
       <w>190</w>
       <h>140</h>
     </coordinates>
@@ -155,12 +157,25 @@ VehicleComponent
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>540</x>
-      <y>420</y>
+      <x>480</x>
+      <y>540</y>
       <w>210</w>
       <h>70</h>
     </coordinates>
     <panel_attributes>lt=-</panel_attributes>
     <additional_attributes>190.0;10.0;10.0;10.0;10.0;50.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>590</x>
+      <y>220</y>
+      <w>330</w>
+      <h>220</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m1=1
+m2=1</panel_attributes>
+    <additional_attributes>10.0;10.0;310.0;10.0;310.0;190.0;240.0;190.0</additional_attributes>
   </element>
 </diagram>
