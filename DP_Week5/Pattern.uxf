@@ -4,7 +4,7 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>780</x>
+      <x>900</x>
       <y>170</y>
       <w>290</w>
       <h>70</h>
@@ -18,7 +18,7 @@ IExportHelper
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>290</x>
+      <x>410</x>
       <y>170</y>
       <w>310</w>
       <h>70</h>
@@ -33,7 +33,7 @@ IExportHelper
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>410</x>
+      <x>530</x>
       <y>320</y>
       <w>250</w>
       <h>70</h>
@@ -48,7 +48,7 @@ IExportHelper
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>670</x>
+      <x>790</x>
       <y>320</y>
       <w>250</w>
       <h>70</h>
@@ -63,7 +63,7 @@ IExportHelper
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>930</x>
+      <x>1050</x>
       <y>320</y>
       <w>250</w>
       <h>70</h>
@@ -78,7 +78,7 @@ IExportHelper
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1190</x>
+      <x>1310</x>
       <y>320</y>
       <w>250</w>
       <h>70</h>
@@ -93,7 +93,7 @@ IExportHelper
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>790</x>
+      <x>910</x>
       <y>230</y>
       <w>150</w>
       <h>110</h>
@@ -104,7 +104,7 @@ IExportHelper
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>520</x>
+      <x>640</x>
       <y>270</y>
       <w>300</w>
       <h>70</h>
@@ -115,7 +115,7 @@ IExportHelper
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>910</x>
+      <x>1030</x>
       <y>270</y>
       <w>160</w>
       <h>70</h>
@@ -126,7 +126,7 @@ IExportHelper
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1040</x>
+      <x>1160</x>
       <y>270</y>
       <w>290</w>
       <h>70</h>
@@ -137,7 +137,7 @@ IExportHelper
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>430</x>
+      <x>550</x>
       <y>430</y>
       <w>210</w>
       <h>100</h>
@@ -151,7 +151,7 @@ IExportHelper
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>680</x>
+      <x>800</x>
       <y>430</y>
       <w>210</w>
       <h>100</h>
@@ -166,7 +166,7 @@ IExportHelper
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>950</x>
+      <x>1070</x>
       <y>430</y>
       <w>210</w>
       <h>100</h>
@@ -181,7 +181,7 @@ IExportHelper
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1210</x>
+      <x>1330</x>
       <y>430</y>
       <w>210</w>
       <h>100</h>
@@ -195,7 +195,7 @@ IExportHelper
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>590</x>
+      <x>710</x>
       <y>200</y>
       <w>210</w>
       <h>30</h>
@@ -206,7 +206,7 @@ IExportHelper
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>520</x>
+      <x>640</x>
       <y>380</y>
       <w>30</w>
       <h>70</h>
@@ -217,7 +217,7 @@ IExportHelper
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>770</x>
+      <x>890</x>
       <y>380</y>
       <w>30</w>
       <h>70</h>
@@ -228,7 +228,7 @@ IExportHelper
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1040</x>
+      <x>1160</x>
       <y>380</y>
       <w>30</w>
       <h>70</h>
@@ -239,12 +239,106 @@ IExportHelper
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1310</x>
+      <x>1430</x>
       <y>380</y>
       <w>30</w>
       <h>70</h>
     </coordinates>
     <panel_attributes>lt=&lt;-</panel_attributes>
     <additional_attributes>10.0;50.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>230</x>
+      <y>610</y>
+      <w>210</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>Form
+--
+
+--</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>320</x>
+      <y>540</y>
+      <w>30</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;70.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>230</x>
+      <y>360</y>
+      <w>210</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>Manager
+--
+
+--</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>320</x>
+      <y>200</y>
+      <w>110</w>
+      <h>180</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>90.0;10.0;10.0;10.0;10.0;160.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>430</x>
+      <y>460</y>
+      <w>140</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.</panel_attributes>
+    <additional_attributes>120.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>470</x>
+      <y>460</y>
+      <w>450</w>
+      <h>150</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.</panel_attributes>
+    <additional_attributes>430.0;70.0;430.0;130.0;10.0;130.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>890</x>
+      <y>520</y>
+      <w>300</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.</panel_attributes>
+    <additional_attributes>280.0;10.0;280.0;70.0;10.0;70.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1160</x>
+      <y>520</y>
+      <w>300</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.</panel_attributes>
+    <additional_attributes>280.0;10.0;280.0;70.0;10.0;70.0</additional_attributes>
   </element>
 </diagram>
