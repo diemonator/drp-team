@@ -181,7 +181,7 @@ IExportHelper
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1330</x>
+      <x>1310</x>
       <y>430</y>
       <w>210</w>
       <h>100</h>
@@ -239,7 +239,7 @@ IExportHelper
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1430</x>
+      <x>1410</x>
       <y>380</y>
       <w>30</w>
       <h>70</h>
@@ -301,44 +301,44 @@ IExportHelper
     <id>Relation</id>
     <coordinates>
       <x>430</x>
-      <y>460</y>
-      <w>140</w>
-      <h>30</h>
+      <y>340</y>
+      <w>120</w>
+      <h>150</h>
     </coordinates>
     <panel_attributes>lt=&lt;.</panel_attributes>
-    <additional_attributes>120.0;10.0;10.0;10.0</additional_attributes>
+    <additional_attributes>100.0;10.0;50.0;10.0;50.0;130.0;10.0;130.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
       <x>470</x>
-      <y>460</y>
-      <w>450</w>
-      <h>150</h>
+      <y>380</y>
+      <w>350</w>
+      <h>230</h>
     </coordinates>
     <panel_attributes>lt=&lt;.</panel_attributes>
-    <additional_attributes>430.0;70.0;430.0;130.0;10.0;130.0;10.0;10.0</additional_attributes>
+    <additional_attributes>330.0;10.0;330.0;40.0;300.0;40.0;300.0;210.0;10.0;210.0;10.0;90.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>890</x>
-      <y>520</y>
-      <w>300</w>
-      <h>90</h>
+      <x>750</x>
+      <y>380</y>
+      <w>350</w>
+      <h>230</h>
     </coordinates>
     <panel_attributes>lt=&lt;.</panel_attributes>
-    <additional_attributes>280.0;10.0;280.0;70.0;10.0;70.0</additional_attributes>
+    <additional_attributes>330.0;10.0;330.0;40.0;280.0;40.0;280.0;210.0;10.0;210.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1160</x>
-      <y>520</y>
-      <w>300</w>
-      <h>90</h>
+      <x>1020</x>
+      <y>380</y>
+      <w>340</w>
+      <h>230</h>
     </coordinates>
     <panel_attributes>lt=&lt;.</panel_attributes>
-    <additional_attributes>280.0;10.0;280.0;70.0;10.0;70.0</additional_attributes>
+    <additional_attributes>320.0;10.0;320.0;40.0;270.0;40.0;270.0;210.0;10.0;210.0</additional_attributes>
   </element>
 </diagram>
