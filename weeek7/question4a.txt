@@ -1,0 +1,7 @@
+question is - 1 positive and 1 negative of the pattern?
+advantage-messagequeue can consume restservice and wcf from restadapter and soapadapter easily.
+disadvantage-alot of classes like restadapter and soapadapter when we have more services.
+
+extensibility - in order to have another library we have to make another adapter.
+maintainibility - its easy, as we have to only change the adapters and nothing else.
+reusability -  
