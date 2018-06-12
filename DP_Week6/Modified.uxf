@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.2">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>270</x>
+      <y>250</y>
+      <w>260</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>/SocialNetwork/
+--
+
+--
+# &lt;&lt;property&gt;&gt; Profiles: List&lt;Profiles&gt;
++ &lt;&lt;property&gt;&gt; Count: int
++ this[int index]: Profile
+/+ CreateIterator(): IProfileIterator/
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>170</x>
+      <y>550</y>
+      <w>240</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>Facebook
+--
+
+--
+# &lt;&lt;property&gt;&gt; Profile: List&lt;Profiles&gt;
+# CreateIterator(): ProfleIterator
++ &lt;&lt;ctor&gt;&gt; Facebook()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>430</x>
+      <y>550</y>
+      <w>230</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>LinkedIn
+--
+
+--
+# &lt;&lt;property&gt;&gt; Profile: List&lt;Profiles&gt;
+# CreateIterator(): ProfleIterator
++ &lt;&lt;ctor&gt;&gt; LinkedIn()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>270</x>
+      <y>360</y>
+      <w>140</w>
+      <h>210</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>120.0;10.0;120.0;160.0;10.0;160.0;10.0;190.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>380</x>
+      <y>510</y>
+      <w>180</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>lt=-</panel_attributes>
+    <additional_attributes>10.0;10.0;160.0;10.0;160.0;40.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>900</x>
+      <y>240</y>
+      <w>210</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;interface&gt;&gt;
+IProfileIterator
+--
++ CurrentProfile(): Profile
++ First(): Profile
++ IsDone(): bool
++ Next(): Profile</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>990</x>
+      <y>340</y>
+      <w>280</w>
+      <h>200</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;150.0;260.0;150.0;260.0;180.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>860</x>
+      <y>480</y>
+      <w>160</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>140.0;10.0;10.0;10.0;10.0;40.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>580</x>
+      <y>70</y>
+      <w>220</w>
+      <h>170</h>
+    </coordinates>
+    <panel_attributes>Form1
+--
+- _iterator: IProfileIterator
+- _socialNetwork: SocialNetwork
+- _facebook: Facebook
+- _linkedIn: LinkedIn
+--
++ void SwitchProfileTypes()
++ void AddProfile()
++ void GetProfilesOfType()
++ void GetWantedProfileData()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>410</x>
+      <y>400</y>
+      <w>280</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>Profile
+--
++ &lt;&lt;property&gt;&gt; Name: string
++ &lt;&lt;property&gt;&gt; Email: string
+--
++ &lt;&lt;ctor&gt;&gt; Profile(name: string, email: string)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>650</x>
+      <y>580</y>
+      <w>140</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=.&gt;
+</panel_attributes>
+    <additional_attributes>10.0;20.0;120.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>650</x>
+      <y>610</y>
+      <w>140</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;120.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1100</x>
+      <y>520</y>
+      <w>310</w>
+      <h>130</h>
+    </coordinates>
+    <panel_attributes>FacebookIterator
+--
+- _current: int
+- _facebook: Facebook
+--
++ &lt;&lt;ctor&gt;&gt; FacebookIterator(facebook: Facebook)
++ CurrentProfile(): Profile
++ First(): Profile
++ IsDone(): bool
++ Next(): Profile</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>770</x>
+      <y>520</y>
+      <w>300</w>
+      <h>130</h>
+    </coordinates>
+    <panel_attributes>LinkedInIterator
+--
+- _current: int
+- _linkedIn: LinkedIn
+--
++ &lt;&lt;ctor&gt;&gt; LinkedInIterator(linkedIn: LinkedIn)
++ CurrentProfile(): Profile
++ First(): Profile
++ IsDone(): bool
++ Next(): Profile</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>320</x>
+      <y>640</y>
+      <w>940</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;40.0;920.0;40.0;920.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>290</x>
+      <y>640</y>
+      <w>1000</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>lt=.&gt;
+</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;60.0;980.0;60.0;980.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>380</x>
+      <y>190</y>
+      <w>220</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;60.0;10.0;10.0;200.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>790</x>
+      <y>190</y>
+      <w>230</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>210.0;50.0;210.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>440</x>
+      <y>360</y>
+      <w>30</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;40.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>200</x>
+      <y>160</y>
+      <w>400</w>
+      <h>410</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-&gt;</panel_attributes>
+    <additional_attributes>380.0;10.0;10.0;10.0;10.0;390.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>650</x>
+      <y>230</y>
+      <w>90</w>
+      <h>360</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-&gt;</panel_attributes>
+    <additional_attributes>70.0;10.0;70.0;340.0;10.0;340.0</additional_attributes>
+  </element>
+</diagram>
