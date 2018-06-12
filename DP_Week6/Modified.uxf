@@ -4,8 +4,8 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>270</x>
-      <y>250</y>
+      <x>250</x>
+      <y>290</y>
       <w>260</w>
       <h>120</h>
     </coordinates>
@@ -23,8 +23,8 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>170</x>
-      <y>550</y>
+      <x>150</x>
+      <y>590</y>
       <w>240</w>
       <h>100</h>
     </coordinates>
@@ -40,8 +40,8 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>430</x>
-      <y>550</y>
+      <x>410</x>
+      <y>590</y>
       <w>230</w>
       <h>100</h>
     </coordinates>
@@ -57,8 +57,8 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>270</x>
-      <y>360</y>
+      <x>250</x>
+      <y>400</y>
       <w>140</w>
       <h>210</h>
     </coordinates>
@@ -68,8 +68,8 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>380</x>
-      <y>510</y>
+      <x>360</x>
+      <y>550</y>
       <w>180</w>
       <h>60</h>
     </coordinates>
@@ -79,12 +79,12 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>900</x>
-      <y>240</y>
+      <x>880</x>
+      <y>280</y>
       <w>210</w>
       <h>110</h>
     </coordinates>
-    <panel_attributes>&lt;&lt;interface&gt;&gt;
+    <panel_attributes>&lt;&lt;Interface&gt;&gt;
 IProfileIterator
 --
 + CurrentProfile(): Profile
@@ -96,8 +96,8 @@ IProfileIterator
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>990</x>
-      <y>340</y>
+      <x>970</x>
+      <y>380</y>
       <w>280</w>
       <h>200</h>
     </coordinates>
@@ -107,8 +107,8 @@ IProfileIterator
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>860</x>
-      <y>480</y>
+      <x>840</x>
+      <y>520</y>
       <w>160</w>
       <h>60</h>
     </coordinates>
@@ -118,29 +118,24 @@ IProfileIterator
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>580</x>
-      <y>70</y>
+      <x>560</x>
+      <y>110</y>
       <w>220</w>
-      <h>170</h>
+      <h>140</h>
     </coordinates>
-    <panel_attributes>Form1
+    <panel_attributes>Console
 --
-- _iterator: IProfileIterator
-- _socialNetwork: SocialNetwork
-- _facebook: Facebook
-- _linkedIn: LinkedIn
---
-+ void SwitchProfileTypes()
-+ void AddProfile()
-+ void GetProfilesOfType()
-+ void GetWantedProfileData()</panel_attributes>
+- manager: Manager
+- iterator: IProfileIterator
+- Manager: m
+--</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>410</x>
-      <y>400</y>
+      <x>390</x>
+      <y>440</y>
       <w>280</w>
       <h>90</h>
     </coordinates>
@@ -155,8 +150,8 @@ IProfileIterator
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>650</x>
-      <y>580</y>
+      <x>630</x>
+      <y>620</y>
       <w>140</w>
       <h>40</h>
     </coordinates>
@@ -167,8 +162,8 @@ IProfileIterator
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>650</x>
-      <y>610</y>
+      <x>630</x>
+      <y>650</y>
       <w>140</w>
       <h>30</h>
     </coordinates>
@@ -178,8 +173,8 @@ IProfileIterator
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1100</x>
-      <y>520</y>
+      <x>1080</x>
+      <y>560</y>
       <w>310</w>
       <h>130</h>
     </coordinates>
@@ -198,8 +193,8 @@ IProfileIterator
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>770</x>
-      <y>520</y>
+      <x>750</x>
+      <y>560</y>
       <w>300</w>
       <h>130</h>
     </coordinates>
@@ -218,8 +213,8 @@ IProfileIterator
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>320</x>
-      <y>640</y>
+      <x>300</x>
+      <y>680</y>
       <w>940</w>
       <h>60</h>
     </coordinates>
@@ -229,8 +224,8 @@ IProfileIterator
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>290</x>
-      <y>640</y>
+      <x>270</x>
+      <y>680</y>
       <w>1000</w>
       <h>80</h>
     </coordinates>
@@ -241,8 +236,8 @@ IProfileIterator
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>380</x>
-      <y>190</y>
+      <x>360</x>
+      <y>230</y>
       <w>220</w>
       <h>80</h>
     </coordinates>
@@ -252,8 +247,8 @@ IProfileIterator
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>790</x>
-      <y>190</y>
+      <x>770</x>
+      <y>230</y>
       <w>230</w>
       <h>70</h>
     </coordinates>
@@ -263,8 +258,8 @@ IProfileIterator
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>440</x>
-      <y>360</y>
+      <x>420</x>
+      <y>400</y>
       <w>30</w>
       <h>60</h>
     </coordinates>
@@ -272,25 +267,54 @@ IProfileIterator
     <additional_attributes>10.0;40.0;10.0;10.0</additional_attributes>
   </element>
   <element>
-    <id>Relation</id>
+    <id>UMLClass</id>
     <coordinates>
-      <x>200</x>
-      <y>160</y>
-      <w>400</w>
-      <h>410</h>
+      <x>0</x>
+      <y>430</y>
+      <w>280</w>
+      <h>100</h>
     </coordinates>
-    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-&gt;</panel_attributes>
-    <additional_attributes>380.0;10.0;10.0;10.0;10.0;390.0</additional_attributes>
+    <panel_attributes>Manager
+--
+- facebook: Facebook
+- linkedIn: LinkedIn
+--
++ CreateFacebook(): SocialNetwork
++ CreateIterator(SocialNetwork social): IProfileIterator
++ CreateLinkedIn(): SocialNetwork</panel_attributes>
+    <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>650</x>
-      <y>230</y>
-      <w>90</w>
-      <h>360</h>
+      <x>80</x>
+      <y>170</y>
+      <w>500</w>
+      <h>280</h>
     </coordinates>
-    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-&gt;</panel_attributes>
-    <additional_attributes>70.0;10.0;70.0;340.0;10.0;340.0</additional_attributes>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;260.0;10.0;10.0;480.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>100</x>
+      <y>520</y>
+      <w>70</w>
+      <h>150</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;130.0;50.0;130.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>100</x>
+      <y>640</y>
+      <w>440</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>lt=-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;70.0;420.0;70.0;420.0;50.0</additional_attributes>
   </element>
 </diagram>
