@@ -17,7 +17,6 @@ namespace BookConverter
 
         public bool ExportTo(string path, IExportHelper helper)
         {
-
             return helper.Export(path, this);
         }
     }

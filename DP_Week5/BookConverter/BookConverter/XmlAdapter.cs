@@ -11,9 +11,11 @@ namespace BookConverter
     {
         public XmlAdapter()
         {
+
         }
         public bool Export(string path, Library library)
         {
+            throw new NotImplementedException();
         }
     }
 }

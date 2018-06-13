@@ -11,7 +11,7 @@ namespace New_Iterator
         Facebook facebook = new Facebook();
         LinkedIn linkedin = new LinkedIn();
 
-        public IProfileIterator CreateIterator(SocialNetwork social)
+        public IProfileIterator CreateIterator(ISocialNetwork social)
         {
             if (social is Facebook)
             {
@@ -23,11 +23,11 @@ namespace New_Iterator
             }
         }
 
-        public SocialNetwork CreateFacebook()
+        public ISocialNetwork CreateFacebook()
         {
             return facebook;
         }
-        public SocialNetwork CreateLinkedIn()
+        public ISocialNetwork CreateLinkedIn()
         {
             return linkedin;
         }

@@ -8,6 +8,11 @@ namespace BookConverter
 {
     class PdfAdapter : IExportHelper
     {
+        public PdfAdapter()
+        {
+
+        }
+
         public bool Export(string path, Library library)
         {
             throw new NotImplementedException();

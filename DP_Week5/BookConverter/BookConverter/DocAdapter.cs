@@ -8,7 +8,6 @@ namespace BookConverter
 {
     class DocAdapter : IExportHelper
     {
-        
         public DocAdapter()
         {
 
