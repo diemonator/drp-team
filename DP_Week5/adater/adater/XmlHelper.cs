@@ -3,13 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using iTextSharp.text;
-using iTextSharp.text.pdf;
 
 namespace BookConverter
 {
-    class PdfAdaptee
+    class XmlHelper
     {
-        
+        public string GetConvertedString()
+        {
+            return "has been converted To XML format";
+        }
     }
 }
