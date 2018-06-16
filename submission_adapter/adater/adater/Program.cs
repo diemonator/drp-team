@@ -10,10 +10,9 @@ namespace BookConverter
 {
     class Program
     {
-        private static Manager myManager;
         static void Main(string[] args)
         {
-            myManager = new Manager();
+            Manager myManager = new Manager();
             List<string> books = new List<string>();
             books = myManager.GetListOfBooks();
             Console.WriteLine("We have the following books:-");
@@ -23,36 +22,43 @@ namespace BookConverter
                 Console.WriteLine("Press " + count + " for " + s);
                 count++;
             }
-            char inputForBook = Convert.ToChar(Console.ReadLine());
-            Console.WriteLine("Press '1' to convert string to Xml, Press '2' to convert file to Pdf, 'q' to quit and 'r' to start a new console");
-            char inputForFile = Convert.ToChar(Console.ReadLine());
-
-            while (inputForFile != 113)
+            try
             {
-                if (inputForFile == 49 || inputForFile == 50)
+                char inputForBook = Convert.ToChar(Console.ReadLine());
+                Console.WriteLine("Press '1' to convert string to Xml, Press '2' to convert file to Pdf, 'r' to start a new console and any other key to exit to quit");
+                char inputForFile = Convert.ToChar(Console.ReadLine());
+
+                while (inputForFile != 113)
                 {
-                    int i = (int)Char.GetNumericValue(inputForFile);
-                    int j = (int)Char.GetNumericValue(inputForBook);
-                    myManager = new Manager();
-                    Console.WriteLine("Congrats!!! " + " " + books[j - 1] + " " + myManager.ToString(i, j));
+                    if (inputForFile == 49 || inputForFile == 50)
+                    {
+                        int i = (int)Char.GetNumericValue(inputForFile);
+                        int j = (int)Char.GetNumericValue(inputForBook);
+                        myManager = new Manager();
+                        Console.WriteLine("Congrats!!! " + " " + books[j - 1] + " " + myManager.ToString(i, j));
+                    }
+                    else if (inputForFile == 113)
+                    {
+                        Environment.Exit(0);
+                    }
+                    else if (inputForFile == 114)
+                    {
+                        Console.WriteLine("Press '1' to convert string to Xml, Press '2' to convert file to Pdf, 'q' to quit and 'r' to start new console");
+                        var info = new System.Diagnostics.ProcessStartInfo(Environment.GetCommandLineArgs()[0]);
+                        System.Diagnostics.Process.Start(info);
+                    }
+                    else
+                    {
+                        Console.WriteLine("Invalid input");
+                    }
+                    inputForFile = Convert.ToChar(Console.ReadLine());
                 }
-                else if (inputForFile == 113)
-                {
-                    Environment.Exit(0);
-                }
-                else if (inputForFile == 114)
-                {
-                    Console.WriteLine("Press '1' to convert string to Xml, Press '2' to convert file to Pdf, 'q' to quit and 'r' to start new console");
-                    var info = new System.Diagnostics.ProcessStartInfo(Environment.GetCommandLineArgs()[0]);
-                    System.Diagnostics.Process.Start(info);
-                }
-                else
-                {
-                    Console.WriteLine("Invalid input");
-                }
-                inputForFile = Convert.ToChar(Console.ReadLine());
+                Environment.Exit(0);
             }
-            Environment.Exit(0);
+            catch (FormatException e)
+            {
+
+            }
         }
     }
 }

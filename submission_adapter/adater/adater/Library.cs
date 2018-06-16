@@ -8,7 +8,7 @@ namespace BookConverter
 {
     public class Library
     {
-        public List<Book> Books { get; set; }
+        public List<Book> Books { get; private set; }
 
         public Library()
         {
